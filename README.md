@@ -46,6 +46,7 @@ other private functions that you find useful.
 8. If your function fits on one line, put it entirely in the header file, instead of a
 prototype. This is called an “inline function” and it increases the efficiency of the
 running program.
+
 The find() function.
 • As shown in class, initialize the scan pointer to the head of the list and the
 prior pointer to nullptr.
