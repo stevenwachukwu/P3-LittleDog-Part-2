@@ -46,20 +46,3 @@ other private functions that you find useful.
 8. If your function fits on one line, put it entirely in the header file, instead of a
 prototype. This is called an “inline function” and it increases the efficiency of the
 running program.
-
-The find() function.
-• As shown in class, initialize the scan pointer to the head of the list and the
-prior pointer to nullptr.
-• In a 2-pointer walk, always set prior = scan before you change scan to scan-
->next.
-• Do a 2-pointer walk down the list until scan points at a cell whose data is greater
-than the new data.
-• Return. At this point, prior is pointing to the cell that should precede the new cell.
-The insert() function.
-• Call find() to position the scan and prior pointers on your linked list.
-• Instantiate a new Cell containing the line of text you just read and pointing to
-whatever scan
-currently points to.
-• Then check prior: if it is nullptr, make head point at the new cell. Otherwise,
-make the cell that prior points at point at the new cell.
-• If you do this in the right order, it is four lines of code.
